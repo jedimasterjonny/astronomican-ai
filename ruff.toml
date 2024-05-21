@@ -1,0 +1,12 @@
+target-version = "py311"
+
+[lint]
+select = ["ALL"]
+fixable = ["ALL"]
+
+ignore = [
+  "ANN",  # Annotations
+  "D",    # Docstrings
+  "TRY",  # Require fine grained exception handling
+  "T20",  # Print statements
+]
