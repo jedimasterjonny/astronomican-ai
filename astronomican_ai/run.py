@@ -12,7 +12,7 @@ except KeyError:
 
 def gemini_chat():
     vertexai.init(project=PROJECT, location="europe-north1")
-    model = GenerativeModel(model_name="gemini-1.5-pro-preview-0514")
+    model = GenerativeModel(model_name="gemini-1.0-pro")
 
     response = model.generate_content(
         "What is Warhammer 40,000?",
